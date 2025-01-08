@@ -1,17 +1,43 @@
+:root{
+    --navBarHeight: 75px;
+    --sideBarHeight: 200px;
+}
+
 #navBar {
     background-color: rgb(233, 203, 253);
+    height:var(--navBarHeight);
+
 }
 
 #sidebar {
     background-color: rgb(102, 102, 139);
+    width: var(--sideBarHeight);
+    padding: 10px;
+
 }
 
 #main {
     background-color: rgb(145, 208, 219);
+    width: calc(100vw - var(--sideBarHeight));
 }
 
 .flexRow {
     display: flex;
+    padding: 10px;
+    
+}
+
+#about {
+    margin-right: 10px;
+}
+
+#content {
+    margin-right: 10px;
+}
+
+.menuItem {
+    width: 200px;
+    height: 250px;
 }
 
 .flexColumn {
